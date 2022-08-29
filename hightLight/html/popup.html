@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script src="../library/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="../library/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/popup.css">
+    <link rel="stylesheet" href="../css/toggleSwitch.css">
+    <script src="../library/bootstrap/js/bootstrap.js"></script>
+    <title>My Extension</title>
+</head>
+
+<body>
+    <div class="wrapper-container">
+        <div class="container">
+            <div class="row">
+
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <ul class="nav nav-tabs menu">
+                        <li class="active"><a data-toggle="tab" href="#list">List page</a></li>
+                        <li><a data-toggle="tab" href="#current">Page current</a></li>
+                        <li><a data-toggle="tab" href="#setting">Setting</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+            <div class="row">
+                <div class="tab-content">
+                    <div id="list" class="tab-pane fade">
+                        <h4>Danh sách page</h4>
+                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat.</p>
+                    </div>
+                    <div id="current" class="tab-pane fade">
+                        <h4>Trang hiện tại</h4>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam.</p>
+                    </div>
+                    <div id="setting" class="tab-pane fade">
+                        <h4>Cài đặt</h4>
+
+                        <div>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="../js/background.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+{
+  "name": "hightLight Extension",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "description" : "Extension for hightLight",
+  "icons": {
+      "16": "images/luffy_16.png",
+      "48": "images/luffy_48.png"
+  },
+  "action": {
+      "default_icon": {
+          "19": "images/luffy_16.png",
+          "38": "images/luffy_48.png"
+      },
+      "default_title": "hightLight Extension",
+      "default_popup": "html/popup.html"
+  },
+  "background": {
+      "service_worker": "js/background.js"
+  },
+  "content_scripts": [
+      {
+          "matches": [
+              "*://*/*"
+          ],
+          "js": [
+              "js/start.js"
+          ],
+          "run_at": "document_end"
+      }
+  ],
+  "permissions": [
+      "clipboardWrite",
+      "storage"
+  ]
+}
